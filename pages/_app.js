@@ -1,12 +1,15 @@
 import Layout from '../components/Layout'
-import Header from '../components/Header'
 import '../styles/globals.css'
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { fab } from '@fortawesome/free-brands-svg-icons'
+
+library.add(fab)
 
 function MyApp({Component, pageProps}) {
     return (
         <Layout>
             <>
-                <main className='container'>
+                <main>
                     <Component {...pageProps} />
                 </main>
             </>
