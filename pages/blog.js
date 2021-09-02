@@ -1,6 +1,5 @@
 import fs from 'fs'
 import path from 'path'
-import Head from 'next/head'
 import matter from 'gray-matter'
 import Post from '../components/Post'
 import {sortByDate} from '../utils'
@@ -8,7 +7,7 @@ import {sortByDate} from '../utils'
 export default function Blog({posts}) {
   return (
     <div>
-      <div className='posts'>
+      <div className='grid sm:grid-cols-1 md:grid-cols-3 gap-4'>
         {posts.map((post, index) => (
           <Post key={index} post={post} />
         ))}
