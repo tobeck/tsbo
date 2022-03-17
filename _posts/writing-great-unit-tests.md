@@ -1,8 +1,13 @@
 ---
 title: 'Writing Great Unit Tests'
-date: 'March 12, 2021'
 excerpt: 'We will look at 10 simple tips and tricks on writing unit tests in JavaScript'
-cover_image: '/images/posts/img7.jpg'
+coverImage: '/assets/blog/writing-great-unit-tests/cover.jpg'
+date: '2020-04-02T05:35:07.322Z'
+author:
+  name: Tobias Becker
+  picture: '/assets/tobias_becker_profile.jpg'
+ogImage:
+  url: '/assets/blog/writing-great-unit-tests/cover.jpg'
 ---
 
 Lorem [markdownum](http://insunt.org/inpositaque), et sanguine rutilos dixit

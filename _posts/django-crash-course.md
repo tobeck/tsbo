@@ -1,8 +1,13 @@
 ---
 title: 'Django Crash Course'
-date: 'March 5, 2021'
 excerpt: 'Django is a very powerful, high level Python framework for building web applications'
-cover_image: '/images/posts/img3.jpg'
+coverImage: '/assets/blog/django-crash-course/cover.jpg'
+date: '2020-03-16T05:35:07.322Z'
+author:
+  name: Tobias Becker
+  picture: '/assets/tobias_becker_profile.jpg'
+ogImage:
+  url: '/assets/blog/django-crash-course/cover.jpg'
 ---
 
 Lorem markdownum fine incustoditam unda factura versum occuluere Aeneas, iuvat

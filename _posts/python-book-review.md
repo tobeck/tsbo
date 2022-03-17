@@ -1,8 +1,13 @@
 ---
 title: 'Python Book Review'
-date: 'March 7, 2021'
 excerpt: 'In this review, we will be looking at the new Python book from Oriley'
-cover_image: '/images/posts/img6.jpg'
+coverImage: '/assets/blog/python-book-review/cover.jpg'
+date: '2020-03-21T05:35:07.322Z'
+author:
+  name: Tobias Becker
+  picture: '/assets/tobias_becker_profile.jpg'
+ogImage:
+  url: '/assets/blog/python-book-review/cover.jpg'
 ---
 
 Lorem markdownum fine incustoditam unda factura versum occuluere Aeneas, iuvat

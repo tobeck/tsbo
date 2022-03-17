@@ -1,20 +1,16 @@
-import Navbar from './Navbar'
-import SocialsBar from './SocialsBar'
-import Container from './Container'
-import About from './About'
+import Alert from '../components/alert'
+import Footer from '../components/footer'
+import Meta from '../components/meta'
 
-const Layout = ({ children }) => {
+export default function Layout({ preview, children }) {
   return (
-    <body className="bg-ash">
-      <div className="container mx-auto w-4/5 h-screen pt-20">
-        <Navbar />
-        <Container>
-          <About />
-        </Container>
-        <SocialsBar />
+    <>
+      <Meta />
+      <div className="min-h-screen">
+        <Alert preview={preview} />
+        <main>{children}</main>
       </div>
-    </body>
+      <Footer />
+    </>
   )
 }
-
-export default Layout

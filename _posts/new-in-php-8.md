@@ -1,8 +1,13 @@
 ---
 title: "What's New In PHP 8?"
-date: 'March 7, 2021'
 excerpt: 'In this article we will look at some of the new features offered in version 8 of PHP'
-cover_image: '/images/posts/img4.jpg'
+coverImage: '/assets/blog/new-in-php-8/cover.jpg'
+date: '2020-03-20T05:35:07.322Z'
+author:
+  name: Tobias Becker
+  picture: '/assets/tobias_becker_profile.jpg'
+ogImage:
+  url: '/assets/blog/new-in-php-8/cover.jpg'
 ---
 
 Lorem markdownum erat meritum instat quis! Parari vera harundinibus molibus nam
