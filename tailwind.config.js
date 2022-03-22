@@ -5,8 +5,8 @@ module.exports = {
     extend: {
       colors: {
         ash: '#A8B7AB',
-        bistre: '#251605'
-      }
+        bistre: '#251605',
+      },
     },
   },
   variants: {
