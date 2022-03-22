@@ -1,4 +1,4 @@
-import Alert from './alert'
+import Navbar from './navbar'
 import Footer from './footer'
 import Meta from './meta'
 
@@ -7,7 +7,7 @@ export default function Layout({ preview, children }) {
     <>
       <Meta />
       <div className="min-h-screen">
-        <Alert preview={preview} />
+        <Navbar />
         <main>{children}</main>
       </div>
       <Footer />
