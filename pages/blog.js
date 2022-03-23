@@ -1,7 +1,7 @@
-import MoreStories from './more-stories'
-import Layout from './layout'
+import MoreStories from '../components/more-stories'
+import Layout from '../components/layout'
 import { getAllPosts } from '../lib/api'
-import Container from './container'
+import Container from '../components/container'
 
 export default function Blog({ allPosts }) {
   const morePosts = allPosts.slice(0)
