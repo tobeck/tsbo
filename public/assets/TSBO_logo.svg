@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 854 1080" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g transform="matrix(1,0,0,1,-10662.2,-53.6022)">
+        <g transform="matrix(1,0,0,1,9484.48,0)">
+            <g>
+                <g transform="matrix(0.90393,0,0,1,537.831,-657.04)">
+                    <rect x="708.251" y="710.999" width="472.277" height="470.799" style="fill:rgb(255,114,114);"/>
+                </g>
+                <g transform="matrix(0.990739,0,0,0.951777,475.501,-614.099)">
+                    <text x="712.197px" y="1166.41px" style="font-family:'Didot';font-size:627.444px;">T</text>
+                </g>
+                <g transform="matrix(0.90393,0,0,1,964.382,-657.397)">
+                    <rect x="708.251" y="710.999" width="472.277" height="470.799" style="fill:white;"/>
+                </g>
+                <g transform="matrix(1.18577,0,0,0.909618,729.622,-573.485)">
+                    <text x="712.197px" y="1166.41px" style="font-family:'Didot';font-size:627.444px;">S</text>
+                </g>
+                <g transform="matrix(0.90393,0,0,1,537.557,-186.154)">
+                    <rect x="708.251" y="710.999" width="472.277" height="470.799" style="fill:white;"/>
+                </g>
+                <g transform="matrix(1.05494,0,0,0.942511,433.544,-133.216)">
+                    <text x="712.197px" y="1166.41px" style="font-family:'Didot';font-size:627.444px;">B</text>
+                </g>
+                <g transform="matrix(0.90393,0,0,1,964.228,-186.192)">
+                    <rect x="708.251" y="710.999" width="472.277" height="470.799" style="fill:rgb(255,114,114);"/>
+                </g>
+                <g transform="matrix(0.865473,0,0,0.909618,976.608,-101.044)">
+                    <text x="712.197px" y="1166.41px" style="font-family:'Didot';font-size:627.444px;">O</text>
+                </g>
+                <g transform="matrix(1.15752,0,0,0.926354,60.5226,-455.956)">
+                    <text x="961.153px" y="1712.93px" style="font-family:'Didot';font-size:181.803px;">DESIGN</text>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
