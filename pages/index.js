@@ -16,7 +16,6 @@ export default function Index({ allPosts }) {
           <title>TSBO</title>
         </Head>
         <Container>
-          <Navbar />
           <Intro />
           {heroPost && (
             <HeroPost
