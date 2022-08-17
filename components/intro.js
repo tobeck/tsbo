@@ -1,17 +1,20 @@
 export default function Intro() {
   return (
-    <section className="flex-col md:flex-row flex items-center md:justify-between mt-16 mb-16 md:mb-12">
+    <section className="flex-col md:flex-row flex items-center md:justify-between mt-10 mb-10 md:mb-12">
       <div>
         <h1>Tobias Becker</h1>
         <h2>SRE based in Stockholm.</h2>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
+          Experienced Site Reliability Engineer with over ten years of
+          experience in both on-prem and cloud based infrastructure. A passion
+          for problem solving and designing solutions for reliable and
+          performant environments, equally comfortable in collaboration with
+          other engineers and in smaller solo projects. Worked for many years in
+          the financial industry with all that comes with that from security to
+          auditing and reliability standpoint. Ability to keep a cool head in
+          stressful situations. Proven over years of on-call work in multiple
+          production environments over multiple geographical locations for both
+          application and database infrastructure.
         </p>
       </div>
     </section>
