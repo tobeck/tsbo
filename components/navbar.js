@@ -5,18 +5,16 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 export default function Navbar() {
   return (
-    <nav className="container flex items-center py-5 mt-10">
-      <div>
+    <nav className="container flex items-center py-5 mt-2">
+      <ul className="hidden sm:flex flex-1 justify-end items-center gap-5  text-xs font-bold">
         <Link href="/">
-          <Image src="/assets/TSBO_logo.svg" width="64" height="64" />
-        </Link>
-      </div>
-      <ul className="hidden sm:flex flex-1 justify-end items-center gap-5  text-xs">
-        <Link href="/experiences">
-          <a>Experiences</a>
+          <a>Home</a>
         </Link>
         <Link href="/blog">
           <a>Blog</a>
+        </Link>
+        <Link href="/resume">
+          <a>Resume</a>
         </Link>
       </ul>
       <div className="flex sm:hidden flex-1 justify-end">
