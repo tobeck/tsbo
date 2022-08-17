@@ -2,7 +2,7 @@
 
 @layer base {
   h1 {
-    @apply text-6xl md:text-8xl font-bold tracking-tighter leading-tight md:pr-8 text-bistre;
+    @apply text-6xl md:text-8xl font-bold tracking-tighter leading-tight md:pr-8 text-bistre mt-5 mb-5;
   }
   h2 {
     @apply text-2xl font-bold pb-2 text-bistre;
