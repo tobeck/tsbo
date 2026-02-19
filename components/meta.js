@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import { CMS_NAME, HOME_OG_IMAGE_URL } from '../lib/constants'
 
 export default function Meta() {
   return (
@@ -25,18 +24,17 @@ export default function Meta() {
       <link
         rel="mask-icon"
         href="/favicons/safari-pinned-tab.svg"
-        color="#000000"
+        color="#E8553A"
       />
       <link rel="shortcut icon" href="/favicons/favicon.ico" />
-      <meta name="msapplication-TileColor" content="#000000" />
+      <meta name="msapplication-TileColor" content="#251605" />
       <meta name="msapplication-config" content="/favicons/browserconfig.xml" />
-      <meta name="theme-color" content="#000" />
+      <meta name="theme-color" content="#251605" />
       <link rel="alternate" type="application/rss+xml" href="/feed.xml" />
       <meta
         name="description"
-        content={`A statically generated blog example using Next.js and ${CMS_NAME}.`}
+        content="Tobias Becker — Site Reliability Engineer based in Stockholm. Portfolio, CV, and blog about infrastructure, cloud, and DevOps."
       />
-      <meta property="og:image" content={HOME_OG_IMAGE_URL} />
     </Head>
   )
 }

@@ -3,15 +3,19 @@ import Navbar from './navbar'
 import Meta from './meta'
 import Container from './container'
 
-export default function Layout({ preview, children }) {
+export default function Layout({ children }) {
   return (
     <>
       <Meta />
-      <Container>
-        <Navbar />
-        <main>{children}</main>
-      </Container>
-      <Footer />
+      <div className="min-h-screen flex flex-col">
+        <Container>
+          <Navbar />
+        </Container>
+        <main className="flex-grow">
+          {children}
+        </main>
+        <Footer />
+      </div>
     </>
   )
 }
