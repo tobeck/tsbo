@@ -1,21 +1,52 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons'
+import Link from 'next/link'
+
 export default function Intro() {
   return (
-    <section className="flex-col md:flex-row flex items-center md:justify-between mt-10 mb-10 md:mb-12">
-      <div>
-        <h1>Tobias Becker</h1>
-        <h2>SRE based in Stockholm.</h2>
-        <p>
+    <section className="py-16 md:py-24">
+      <div className="max-w-2xl">
+        <h1>
+          Tobias Becker
+        </h1>
+        <h2 className="mt-2 mb-6">
+          <span className="text-coral">SRE</span> based in Stockholm.
+        </h2>
+        <p className="text-lg text-gray-mid leading-relaxed mb-8 max-w-xl">
           Experienced Site Reliability Engineer with over ten years of
-          experience in both on-prem and cloud based infrastructure. A passion
-          for problem solving and designing solutions for reliable and
-          performant environments, equally comfortable in collaboration with
-          other engineers and in smaller solo projects. Worked for many years in
-          the financial industry with all that comes with that from security to
-          auditing and reliability standpoint. Ability to keep a cool head in
-          stressful situations. Proven over years of on-call work in multiple
-          production environments over multiple geographical locations for both
-          application and database infrastructure.
+          experience in both on-prem and cloud based infrastructure. Passionate
+          about problem solving and designing solutions for reliable and
+          performant environments.
         </p>
+        <div className="flex flex-wrap items-center gap-4 mb-8">
+          <a
+            href="#experiences"
+            className="inline-block bg-coral text-white font-semibold px-6 py-3 rounded hover:bg-opacity-90 transition-colors text-sm"
+          >
+            View my work
+          </a>
+          <Link href="/blog" className="inline-block border-2 border-bistre text-bistre font-semibold px-6 py-3 rounded hover:bg-bistre hover:text-white transition-colors text-sm">
+              Read the blog
+          </Link>
+        </div>
+        <div className="flex items-center gap-4">
+          <a
+            href="https://www.github.com/tobeck"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-bistre hover:text-coral transition-colors"
+          >
+            <FontAwesomeIcon icon={faGithub} size="xl" />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/tobias-becker-olsson-9a678252"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-bistre hover:text-coral transition-colors"
+          >
+            <FontAwesomeIcon icon={faLinkedin} size="xl" />
+          </a>
+        </div>
       </div>
     </section>
   )

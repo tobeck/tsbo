@@ -7,9 +7,10 @@ import Layout from '../../../components/layout'
 import { getPostBySlug, getAllPosts } from '../../../lib/api'
 import PostTitle from '../../../components/post-title'
 import Head from 'next/head'
+import Link from 'next/link'
 import markdownToHtml from '../../../lib/markdownToHtml'
 
-export default function Post({ post, morePosts, preview }) {
+export default function Post({ post, preview }) {
   const router = useRouter()
   if (!router.isFallback && !post?.slug) {
     return <ErrorPage statusCode={404} />
@@ -20,21 +21,24 @@ export default function Post({ post, morePosts, preview }) {
         {router.isFallback ? (
           <PostTitle>Loading…</PostTitle>
         ) : (
-          <>
-            <article className="mb-32">
-              <Head>
-                <title>{post.title}</title>
-                <meta property="og:image" content={post.ogImage.url} />
-              </Head>
-              <PostHeader
-                title={post.title}
-                coverImage={post.coverImage}
-                date={post.date}
-                author={post.author}
-              />
-              <PostBody content={post.content} />
-            </article>
-          </>
+          <article className="py-16">
+            <Head>
+              <title>{post.title} — Tobias Becker</title>
+              <meta property="og:image" content={post.ogImage.url} />
+            </Head>
+            <div className="mb-8">
+              <Link href="/blog" className="text-coral font-semibold text-sm hover:underline">
+                  &larr; Back to blog
+              </Link>
+            </div>
+            <PostHeader
+              title={post.title}
+              coverImage={post.coverImage}
+              date={post.date}
+              author={post.author}
+            />
+            <PostBody content={post.content} />
+          </article>
         )}
       </Container>
     </Layout>

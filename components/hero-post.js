@@ -1,4 +1,3 @@
-import Avatar from './avatar'
 import DateFormatter from './date-formatter'
 import CoverImage from './cover-image'
 import Link from 'next/link'
@@ -8,12 +7,11 @@ export default function HeroPost({
   coverImage,
   date,
   excerpt,
-  author,
   slug,
 }) {
   return (
-    <section>
-      <div className="mb-8 md:mb-16">
+    <div className="md:grid md:grid-cols-2 md:gap-8 items-center">
+      <div className="mb-6 md:mb-0 rounded-lg overflow-hidden">
         <CoverImage
           title={title}
           src={coverImage}
@@ -22,22 +20,18 @@ export default function HeroPost({
           width={1240}
         />
       </div>
-      <div className="md:grid md:grid-cols-2 md:gap-x-16 lg:gap-x-8 mb-20 md:mb-28">
-        <div>
-          <h3 className="mb-4 text-4xl lg:text-6xl leading-tight">
-            <Link href={`/blog/posts/${slug}`}>
-              <a className="hover:underline">{title}</a>
-            </Link>
-          </h3>
-          <div className="mb-4 md:mb-0 text-lg">
-            <DateFormatter dateString={date} />
-          </div>
-        </div>
-        <div>
-          <p className="text-lg leading-relaxed mb-4">{excerpt}</p>
-          <Avatar name={author.name} picture={author.picture} />
-        </div>
+      <div>
+        <h3 className="text-2xl md:text-3xl font-bold mb-3 leading-snug">
+          <Link href={`/blog/posts/${slug}`} className="hover:text-coral transition-colors">{title}</Link>
+        </h3>
+        <p className="text-sm text-gray-mid mb-3">
+          <DateFormatter dateString={date} />
+        </p>
+        <p className="text-gray-mid leading-relaxed mb-4">{excerpt}</p>
+        <Link href={`/blog/posts/${slug}`} className="text-coral font-semibold text-sm hover:underline">
+            Read more &rarr;
+        </Link>
       </div>
-    </section>
+    </div>
   )
 }
