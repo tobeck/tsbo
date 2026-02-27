@@ -14,8 +14,8 @@ export default function Navbar() {
 
   return (
     <nav className="flex items-center justify-between py-5">
-      <Link href="/" className="flex items-center">
-          <img src="/assets/TSBO_logo.svg" alt="TSBO" className="h-8 w-auto" />
+      <Link href="/" className="text-bistre font-bold text-xl tracking-tight hover:text-coral transition-colors">
+          Tobias Becker
       </Link>
       <ul className="hidden sm:flex items-center gap-8 text-sm font-semibold">
         {navLinks.map(({ href, label }) => (
