@@ -4,7 +4,7 @@ export default function Meta() {
   return (
     <Head>
       <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-      <meta name="theme-color" content="#251605" />
+      <meta name="theme-color" content="#0D1117" />
       <link rel="alternate" type="application/rss+xml" href="/feed.xml" />
       <meta
         name="description"

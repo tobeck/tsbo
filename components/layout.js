@@ -1,17 +1,14 @@
 import Footer from './footer'
-import Navbar from './navbar'
 import Meta from './meta'
-import Container from './container'
+import DotNav from './dot-nav'
 
-export default function Layout({ children }) {
+export default function Layout({ children, showDotNav }) {
   return (
     <>
       <Meta />
-      <div className="min-h-screen flex flex-col">
-        <Container>
-          <Navbar />
-        </Container>
-        <main className="flex-grow">
+      <div className="min-h-screen bg-midnight">
+        {showDotNav && <DotNav />}
+        <main>
           {children}
         </main>
         <Footer />
