@@ -5,35 +5,51 @@ import Intro from '../components/intro'
 import Layout from '../components/layout'
 import { getAllPosts } from '../lib/api'
 import Head from 'next/head'
+import Link from 'next/link'
 
 export default function Index({ allPosts }) {
-  const heroPost = allPosts[0]
+  const recentPosts = allPosts.slice(0, 3)
   return (
     <>
-      <Layout>
+      <Layout showDotNav>
         <Head>
           <title>Tobias Becker — SRE</title>
         </Head>
-        <section className="bg-sand">
-          <Container>
-            <Intro />
-          </Container>
-        </section>
         <Container>
-          {heroPost && (
-            <section className="py-16">
-              <h2 className="text-3xl font-bold mb-8">Latest from the blog</h2>
-              <HeroPost
-                title={heroPost.title}
-                coverImage={heroPost.coverImage}
-                date={heroPost.date}
-                author={heroPost.author}
-                slug={heroPost.slug}
-                excerpt={heroPost.excerpt}
-              />
-            </section>
-          )}
+          <Intro />
+        </Container>
+        <Container>
           <Experiences />
+        </Container>
+        <Container>
+          <section id="blog" className="py-16 md:py-24">
+            <h1 className="mb-8 glow-text text-phosphor">Blog</h1>
+            {recentPosts.length > 0 ? (
+              <>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                  {recentPosts.map((post) => (
+                    <HeroPost
+                      key={post.slug}
+                      title={post.title}
+                      coverImage={post.coverImage}
+                      date={post.date}
+                      author={post.author}
+                      slug={post.slug}
+                      excerpt={post.excerpt}
+                    />
+                  ))}
+                </div>
+                <Link
+                  href="/blog"
+                  className="inline-block border-2 border-phosphor text-phosphor font-mono font-semibold px-6 py-3 text-sm hover:bg-phosphor hover:text-midnight hover:shadow-glow-green transition-all"
+                >
+                  See all posts &rarr;
+                </Link>
+              </>
+            ) : (
+              <p className="text-ghost">No posts yet. Check back soon.</p>
+            )}
+          </section>
         </Container>
       </Layout>
     </>

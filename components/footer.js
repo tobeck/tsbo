@@ -1,42 +1,52 @@
 import Container from './container'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLinkedin, faGithub, faInstagram } from '@fortawesome/free-brands-svg-icons'
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 
 export default function Footer() {
   return (
-    <footer className="bg-bistre text-white mt-20">
+    <footer id="contact" className="py-16 md:py-24 border-t border-terminal">
       <Container>
-        <div className="py-10 flex flex-col md:flex-row items-center justify-between gap-6">
-          <p className="text-sm text-ash">
-            &copy; {new Date().getFullYear()} Tobias Becker. All rights reserved.
-          </p>
-          <div className="flex items-center gap-5">
-            <a
-              href="https://www.linkedin.com/in/tobias-becker-olsson-9a678252"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-ash hover:text-coral transition-colors"
-            >
-              <FontAwesomeIcon icon={faLinkedin} size="lg" />
-            </a>
-            <a
-              href="https://www.github.com/tobeck"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-ash hover:text-coral transition-colors"
-            >
-              <FontAwesomeIcon icon={faGithub} size="lg" />
-            </a>
-            <a
-              href="https://www.instagram.com/tbeckero"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-ash hover:text-coral transition-colors"
-            >
-              <FontAwesomeIcon icon={faInstagram} size="lg" />
-            </a>
-          </div>
+        <h1 className="mb-8 glow-text text-phosphor">Get in touch</h1>
+        <p className="text-ghost mb-8 max-w-lg">
+          Interested in working together, have a question, or just want to say
+          hello? Feel free to reach out.
+        </p>
+        <div className="flex items-center gap-6 mb-12">
+          <a
+            href="mailto:tobias@tsbo.one"
+            className="text-ghost hover:text-phosphor transition-colors"
+          >
+            <FontAwesomeIcon icon={faEnvelope} size="xl" />
+          </a>
+          <a
+            href="https://www.github.com/tobeck"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-ghost hover:text-phosphor transition-colors"
+          >
+            <FontAwesomeIcon icon={faGithub} size="xl" />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/tobias-becker-olsson-9a678252"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-ghost hover:text-phosphor transition-colors"
+          >
+            <FontAwesomeIcon icon={faLinkedin} size="xl" />
+          </a>
+          <a
+            href="https://www.instagram.com/tbeckero"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-ghost hover:text-phosphor transition-colors"
+          >
+            <FontAwesomeIcon icon={faInstagram} size="xl" />
+          </a>
         </div>
+        <p className="text-xs text-ghost font-mono">
+          &copy; {new Date().getFullYear()} Tobias Becker. All rights reserved.
+        </p>
       </Container>
     </footer>
   )
