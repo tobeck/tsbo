@@ -3,6 +3,7 @@ import Layout from '../components/layout'
 import { getAllPosts } from '../lib/api'
 import Container from '../components/container'
 import Head from 'next/head'
+import Link from 'next/link'
 
 export default function Blog({ allPosts }) {
   return (
@@ -13,11 +14,17 @@ export default function Blog({ allPosts }) {
         </Head>
         <Container>
           <div className="py-16">
-            <h1 className="mb-12">Blog</h1>
+            <Link
+              href="/"
+              className="inline-block text-phosphor font-mono text-sm mb-8 hover:underline"
+            >
+              &larr; Home
+            </Link>
+            <h1 className="mb-12 glow-text text-phosphor">Blog</h1>
             {allPosts.length > 0 ? (
               <MoreStories posts={allPosts} />
             ) : (
-              <p className="text-gray-mid">No posts yet. Check back soon.</p>
+              <p className="text-ghost">No posts yet. Check back soon.</p>
             )}
           </div>
         </Container>

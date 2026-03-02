@@ -3,7 +3,7 @@ import PostPreview from './post-preview'
 export default function MoreStories({ posts }) {
   return (
     <section>
-      <h2 className="text-3xl font-bold tracking-tight mb-8">
+      <h2 className="text-sm font-pixel tracking-tight mb-8 text-white">
         All Posts
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">

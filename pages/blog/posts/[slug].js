@@ -27,7 +27,7 @@ export default function Post({ post, preview }) {
               <meta property="og:image" content={post.ogImage.url} />
             </Head>
             <div className="mb-8">
-              <Link href="/blog" className="text-coral font-semibold text-sm hover:underline">
+              <Link href="/blog" className="text-phosphor font-mono text-sm hover:underline">
                   &larr; Back to blog
               </Link>
             </div>
