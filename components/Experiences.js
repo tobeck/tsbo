@@ -13,7 +13,7 @@ export default function Experiences() {
         <div className="border-l-2 border-phosphor pl-6">
           <div className="flex flex-col md:flex-row md:items-baseline md:justify-between mb-1">
             <h3 className="text-xl font-bold text-white">Important Looking Pirates VFX</h3>
-            <span className="text-sm text-ghost font-mono">Nov 2012 — Present</span>
+            <span className="text-sm text-ghost font-mono">Apr 2023 — Present</span>
           </div>
           <p className="text-phosphor font-medium mb-4 font-mono text-sm">Stockholm, Sweden</p>
 
