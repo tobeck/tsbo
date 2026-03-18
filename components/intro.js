@@ -44,7 +44,7 @@ export default function Intro() {
             <FontAwesomeIcon icon={faGithub} size="xl" />
           </a>
           <a
-            href="https://www.linkedin.com/in/tobias-becker-olsson-9a678252"
+            href="https://www.linkedin.com/in/tsbo/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-ghost hover:text-phosphor transition-colors"

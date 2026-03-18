@@ -1,6 +1,10 @@
 import Container from './container'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faLinkedin, faGithub, faInstagram } from '@fortawesome/free-brands-svg-icons'
+import {
+  faLinkedin,
+  faGithub,
+  faInstagram,
+} from '@fortawesome/free-brands-svg-icons'
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 
 export default function Footer() {
@@ -28,20 +32,12 @@ export default function Footer() {
             <FontAwesomeIcon icon={faGithub} size="xl" />
           </a>
           <a
-            href="https://www.linkedin.com/in/tobias-becker-olsson-9a678252"
+            href="https://www.linkedin.com/in/tsbo/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-ghost hover:text-phosphor transition-colors"
           >
             <FontAwesomeIcon icon={faLinkedin} size="xl" />
-          </a>
-          <a
-            href="https://www.instagram.com/tbeckero"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-ghost hover:text-phosphor transition-colors"
-          >
-            <FontAwesomeIcon icon={faInstagram} size="xl" />
           </a>
         </div>
         <p className="text-xs text-ghost font-mono">
